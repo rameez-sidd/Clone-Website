@@ -1,0 +1,14 @@
+@media screen and (max-width:630px){
+    .feats{
+        display: flex;
+        flex-direction: column;
+        /* text-align: start; */
+        justify-content:center;
+        align-items:stretch;
+    }
+    .feats_item{
+        margin-top: 10px;
+    }
+
+
+}

@@ -1,0 +1,20 @@
+@media screen and (max-width:768px){                              
+    .speak_drop_cont{
+        min-width:209%;
+    }
+}
+@media screen and (max-width:425px){
+    header ul li a{
+        margin:0 9px;
+    }      
+    .speakarrow{
+        margin-left: 2px;
+    }     
+    header ul{
+        padding-bottom: 15px;
+    }       
+    .speak_drop_cont{
+        min-width:284%;
+    }             
+
+}

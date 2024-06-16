@@ -1,0 +1,22 @@
+@media screen and (max-width:930px){
+    .flex_privacy{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        max-width:100px;
+    }
+}
+@media screen and (max-width:299px){
+    .box{
+        max-width:50px;
+    }
+}
+
+
+
+
+
+
+

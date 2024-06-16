@@ -1,0 +1,16 @@
+@media screen and (max-width:688px){
+    input[type="search"]{
+        width:95vw;
+    }
+
+}
+@media screen and (max-width:428px){
+    ::placeholder{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:376px){
+    ::placeholder{
+        font-size: 13px;
+    }
+}

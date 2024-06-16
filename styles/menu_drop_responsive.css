@@ -1,0 +1,10 @@
+@media screen and (max-width:604px){
+    .menu_drop_cont{
+        width:200px;
+    }
+}
+@media screen and (max-width:425px){
+    .menu_drop_cont{
+        width:180px;
+    }
+}

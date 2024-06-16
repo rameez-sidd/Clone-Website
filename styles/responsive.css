@@ -1,0 +1,154 @@
+@media screen and (max-width:1286px){
+    footer{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .box{
+        width: 300px;
+    }
+    
+    
+    
+}
+@media screen and (max-width:1054px){
+    .box{
+        width: 270px;
+    }
+    
+    
+}
+@media screen and (max-width:916px){
+    .box{
+        width: 250px;
+    }
+    
+    
+}
+@media screen and (max-width:845px){
+    .box{
+        width: 230px;
+    }
+    
+    
+}
+@media screen and (max-width:793px){
+    .box{
+        width: 215px;
+    }
+    
+    
+}
+@media screen and (max-width:732px){
+    .flex_privacy{
+        flex-direction: column;
+        margin:45px 10px;
+        }
+    .box{
+        width:95% ;
+    }
+    .orange{
+        height: 1550px;
+        margin-top: -790px;
+    }
+    input[type="search"]{
+        width:95vw;
+    }
+    /* .content_below_search{ */
+        /* width:95vw; */
+    /* } */
+    p.bold_line{
+        font-size: 25px;
+    }
+    p.normal_line{
+        font-size: 15px;
+    }
+    
+    
+}
+@media screen and (max-width:693px){
+    .orange{
+        height: 1550px;
+        margin-top: -800px;
+    }
+    
+    
+}
+@media screen and (max-width:656px){
+    .flex_privacy{
+    margin:45px 10px;
+}
+.box{
+    width:95% ;
+}
+    
+    
+    .orange{
+        height: 1550px;
+        margin-top: -870px;
+    }
+}
+@media screen and (max-width:616px){
+    .flex_privacy{
+    margin:45px 10px;
+}
+.box{
+    width:95% ;
+}
+    
+    
+    
+    
+    
+    
+}
+@media screen and (max-width:583px){
+    .flex_privacy{
+    margin:45px 10px;
+}
+.box{
+    width:95% ;
+}
+    
+    
+    .feats_item{
+        display: block;
+        text-align: justify;
+        margin: 13px 35%;
+        
+    }
+    .orange{
+        height: 1550px;
+        margin-top: -880px;
+    }
+    
+    
+    
+}
+@media screen and (max-width:559px){
+    .org_title{
+        font-size: 30px;
+    }    
+        
+    .org_para{
+        font-size: 16px;
+    }
+    .orange{
+        height: 1550px;
+        margin-top: -955px;
+    }
+    .flex_privacy{
+    margin:45px 10px;
+}
+.box{
+    width:95% ;
+}
+}
+@media screen and (max-width:546px){
+    .flex_privacy{
+        margin:45px 10px;
+    }
+    .box{
+
+        width:95% ;
+    }
+}

@@ -1,0 +1,28 @@
+@media screen and (max-width:1253px){
+    .orange{
+        margin-top: -240px;
+    }
+
+}
+@media screen and (max-width:930px){
+    .orange{
+        margin-top: 60px;
+        height: 650px;
+    }   
+}
+@media screen and (max-width:768px){
+    .orange_text{
+        width:80vw;
+
+    }
+    .org_title{
+        font-size: 30px;
+    }
+    .org_para{
+        font-size: 18px;
+    }
+    .orange{
+    
+        height: 570px;
+    }   
+}

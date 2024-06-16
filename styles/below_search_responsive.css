@@ -1,0 +1,23 @@
+@media screen and (max-width:688px){
+    .content_below_search{
+        width:95vw;
+        margin:30px auto;
+    }
+    p.bold_line{
+        font-size: 25px;
+    }
+    
+    
+    
+    
+
+
+}
+@media screen and (max-width:299px){
+    .box_main_title{
+        width:95vw;
+        margin-top: 46px;
+        margin:auto;
+    }
+    
+}

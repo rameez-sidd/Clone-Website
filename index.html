@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckDuckGo — Privacy, simplified.</title>
+    <link rel="icon" href="https://i.ibb.co/z2PCqRv/tabicon.png" width="30px">
+    <!-- <link rel="manifest" href="https://ufile.io/pray2zpv"> -->
+    <!-- CSS only -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> -->
+    <script src="https://kit.fontawesome.com/7ac45e12d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/flex_responsive.css">
+    <link rel="stylesheet" href="styles/orng_responsive.css">
+    <link rel="stylesheet" href="styles/search_responsive.css">
+    <link rel="stylesheet" href="styles/below_search_responsive.css">
+    <link rel="stylesheet" href="styles/foot_responsive.css">
+    <link rel="stylesheet" href="styles/list_responsive.css">
+    <link rel="stylesheet" href="styles/menu_drop_responsive.css">
+    <link rel="stylesheet" href="styles/head_responsive.css">
+    <link rel="stylesheet" href="styles/logo_responsive.css">
+    <!-- JavaScript -->
+    <script src="js/myscript.js"></script>
+
+</head>
+
+<body id="body">
+    <header>
+        <ul>
+            <li id="speak_drop">
+                <a class="speak_hover" href="#">
+                    <button class="drop_btn" onclick="speakContentDrop()">
+                        <i class="fas fa-bullhorn"></i><i class="fas fa-chevron-down speakarrow"></i>
+                    </button>
+                </a>
+                <div id="drop_this" class="speak_drop_cont" style="display: none;">
+                    <p class="drop_li first">
+                        <a class="drop_link" href="https://twitter.com/duckduckgo">
+                            <i class="fab fa-twitter drop_icon"></i>
+                            <a href="https://twitter.com/duckduckgo" class="drop_text">Twitter</a>
+                        </a>
+                    </p>
+                    <p class="drop_li">
+                        <a class="drop_link" href="https://www.reddit.com/r/duckduckgo">
+                            <i class="fab fa-reddit-alien drop_icon"></i>
+                            <a href="https://www.reddit.com/r/duckduckgo" class="drop_text">Reddit</a>
+                    </p>
+                    <p class="drop_li">
+                        <a class="drop_link" href="https://spreadprivacy.com/">
+                            <i class="fas fa-comment-alt drop_icon"></i>
+                            <a href="https://spreadprivacy.com/" class="drop_text">Blog</a>
+                    </p>
+                    <p class="drop_li">
+                        <a class="drop_link" href="https://duckduckgo.com/newsletter">
+                            <i class="fas fa-envelope drop_icon"></i>
+                            <a href="https://duckduckgo.com/newsletter" class="drop_text">Newsletter</a>
+                    </p>
+
+                </div>
+            </li>
+            <li id="menu_drop">
+                <a href="#">
+                    <button class="drop_btn" onclick="menuContentDrop()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </a>
+                <div id="drop_this_too" class="menu_drop_cont" style="display: none;">
+                    <p class="menu_lists_sec first">
+                    <p class="menu_head firsts">SETTINGS
+                        <button class="drop_btn" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </p>
+                    <a class="menu_links" href="https://duckduckgo.com/settings#theme">Themes</a>
+                    <a class="menu_links" href="https://duckduckgo.com/settings">All Settings</a>
+                    <a class="menu_links" href="https://duckduckgo.com/bang">!Bang Search Shortcuts</a>
+                    </p>
+                    <p class="menu_lists_sec">
+                    <p class="menu_head">PRIVACY ESSENTIALS</p>
+                    <a class="menu_links" href="#">Private Search</a>
+                    <a class="menu_links" href="https://duckduckgo.com/app">App and Extension</a>
+                    </p>
+                    <p class="menu_lists_sec">
+                    <p class="menu_head">WHY PRIVACY</p>
+                    <a class="menu_links" href="https://spreadprivacy.com/">Privacy Blog</a>
+                    <a class="menu_links" href="https://duckduckgo.com/newsletter">Privacy Crash Course</a>
+                    <a class="menu_links" href="https://duckduckgo.com/spread">Help Spread Privacy</a>
+                    </p>
+                    <p class="menu_lists_sec">
+                    <p class="menu_head">WHO WE ARE</p>
+                    <a class="menu_links" href="https://duckduckgo.com/about">About Us</a>
+                    <a class="menu_links" href="https://duckduckgo.com/privacy">Privacy Policy</a>
+                    <a class="menu_links" href="https://duckduckgo.com/hiring">Careers</a>
+                    <a class="menu_links" href="https://duckduckgo.com/press">Press Kit</a>
+                    </p>
+                    <p class="menu_lists_sec">
+                    <p class="menu_head">KEEP IN TOUCH</p>
+                    <a class="menu_links" href="https://twitter.com/duckduckgo">Twitter</a>
+                    <a class="menu_links" href="https://www.reddit.com/r/duckduckgo">Reddit</a>
+                    <a class="menu_links" href="https://help.duckduckgo.com/">Help</a>
+
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="logo">
+            <a href="#logo_click"><img src="https://i.ibb.co/s5Nf2Xw/logo.png" alt="logo"></a>
+            <span class="tooltip">Learn More</span>
+        </div>
+        <div class="search">
+            <div class="form">
+                <input id="searchJS" type="search" placeholder="Search the web without being tracked" autofocus="autofocus">
+                <!-- <i class="bi bi-search"></i> -->
+                <button id="fa-search" onclick="search()"><i class="fas fa-search"></i></button>
+            </div>
+
+        </div>
+        <div class="content_below_search">
+            <p class="bold_line">Tired of being tracked online? We can help.</p>
+            <p class="normal_line">Get seamless privacy protection on your browser for free with one download:</p>
+            <div class="feats">
+                <span class="feats_item"><i class="fas fa-check-circle"></i>Private Search</span>
+                <span class="feats_item"><i class="fas fa-check-circle"></i>Tracker Blocking</span>
+                <span class="feats_item"><i class="fas fa-check-circle"></i>Site Encryption</span>
+            </div>
+            <div class="button">
+                <a href="https://chrome.google.com/webstore/detail/duckduckgo-privacy-essent/bkdgflcldnnnapblkhphbgpggdiikppg"
+                    target="_blank"><button class="blue_btn">Add DuckDuckGo to Chrome</button></a>
+            </div>
+            <div class="rating">
+                <a class="stars" target="_blank"
+                    href="https://chrome.google.com/webstore/detail/duckduckgo-privacy-essent/bkdgflcldnnnapblkhphbgpggdiikppg/reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </a>
+                <a target="_blank"
+                    href="https://chrome.google.com/webstore/detail/duckduckgo-privacy-essent/bkdgflcldnnnapblkhphbgpggdiikppg/reviews">Rated
+                    4.4/5</a>
+            </div>
+        </div>
+        <p class="box_main_title">Privacy Protection For Any Device</p>
+        <div class="flex_privacy">
+            <div class="box">
+                <img class="box_img" src="https://duckduckgo.com/assets/add-to-browser/cppm/laptop.svg">
+                <p class="box_title">Privacy for Chrome</p>
+                <p class="box_para">Browse as usual, and we'll take care of the rest. We bundled our search engine,
+                    tracker
+                    blocker, and encryption enforcer
+                    into one <a href="https://duckduckgo.com/app" target="_blank" class="box_link">Chrome Extension</a>.
+                </p>
+            </div>
+            <div class="box">
+                <img class="box_img" src="https://duckduckgo.com/assets/home/landing/icons/search.svg">
+                <p class="box_title">Private Search Engine</p>
+                <p class="box_para">Search privately with our app or extension, add private web search to your favorite
+                    browser, or search directly at
+                    <a href="#body" class="box_link">duckduckgo.com</a>.
+                </p>
+            </div>
+            <div class="box">
+                <img class="box_img" src="https://duckduckgo.com/assets/add-to-browser/cppm/mobile.svg">
+                <p class="box_title">Privacy Browser App</p>
+                <p class="box_para">Our private browser for mobile comes equipped with our search engine, tracker
+                    blocker, encryption enforcer, and more.
+                    Available on <a href="https://duckduckgo.com/app" target="_blank" class="box_link">iOS &
+                        Android</a>.</p>
+            </div>
+        </div>
+        <div class="orange">
+            <div class="orange_text" id="logo_click">
+                <p class="org_title">We don’t store your personal information. Ever.</p>
+                <p class="org_para">Our privacy policy is simple: we don’t collect or share any of your personal
+                    information.</p>
+                <a href="https://chrome.google.com/webstore/detail/duckduckgo-privacy-essent/bkdgflcldnnnapblkhphbgpggdiikppg"
+                    target="_blank"><button class="blue_btn org_btn">Add DuckDuckGo to Chrome</button></a>
+            </div>
+            <img class="orange_img"
+                src="https://duckduckgo.com/assets/onboarding/bathroomguy/1-monster-v2--pre-animation.svg">
+        </div>
+    </main>
+    <footer>
+        <p class="foot_head">Frequently Asked Questions</p>
+        <hr />
+        <div class="que_ans">
+            <div class="ico">
+                <button class="drop_btn" id="down1" style="display: none;" onclick="que1Open()">
+                    <i class="fas fa-chevron-down down styled"></i>
+                </button>
+                <button class="drop_btn" id="up1" style="display: block;" onclick="que1Open()">
+                    <i class="fas fa-chevron-up up styled"></i>
+                </button>
+
+
+            </div>
+            <div class="qa">
+                <p class="que">How does DuckDuckGo make money?</p>
+                <p class="ans" id="openans1" style="display: block;">We make our money from private ads on our search
+                    engine. On other search engines, ads are based on
+                    profiles compiled
+                    about you using your personal information like search, browsing, and purchase history. Since we
+                    don’t collect that
+                    information, search ads on DuckDuckGo are based on the search results page you are viewing, not on
+                    you as a person.
+                    For
+                    example, if you search for cars, we’ll show you ads about cars. <a class="ans_link"
+                        href="https://spreadprivacy.com/duckduckgo-revenue-model/" target="_blank">Learn more</a>.
+                </p>
+            </div>
+        </div>
+        <hr />
+        <div class="que_ans">
+            <div class="ico">
+                <button class="drop_btn" id="down2" style="display: block;" onclick="que2Open()">
+                    <i class="fas fa-chevron-down down styled"></i>
+                </button>
+                <button class="drop_btn" id="up2" style="display: none;" onclick="que2Open()">
+                    <i class="fas fa-chevron-up up styled"></i>
+                </button>
+            </div>
+            <div class="qa">
+                <p class="que">What does Google know about me?</p>
+                <p class="ans" id="openans2" style="display:none;">Not only does Google keep your search history forever
+                    by default, their trackers have been found on 75% of the top
+                    million websites, which means they are tracking most everywhere you go on the Internet (unless you
+                    stop them with
+                    DuckDuckGo!). And that’s just the tip of the iceberg. <a target="_blank"
+                        href="https://spreadprivacy.com/what-does-google-know-about-me/" class="ans_link">Learn
+                        more</a>.</p>
+            </div>
+        </div>
+        <hr />
+        <div class="que_ans">
+            <div class="ico">
+                <button class="drop_btn" id="down3" style="display: block;" onclick="que3Open()">
+                    <i class="fas fa-chevron-down down styled"></i>
+                </button>
+                <button class="drop_btn" id="up3" style="display: none;" onclick="que3Open()">
+                    <i class="fas fa-chevron-up up styled"></i>
+                </button>
+
+
+            </div>
+            <div class="qa">
+                <p class="que">Why use DuckDuckGo instead of Google?</p>
+                <p class="ans" id="openans3" style="display:none;">Ever notice ads constantly following you around?
+                    That’s in part because Google tracks your searches and hides trackers
+                    on millions of websites. By contrast, our private search engine doesn’t track your searches and our
+                    <a target="_blank" href="https://duckduckgo.com/app" class="ans_link">DuckDuckGo browser
+                        extension and mofale app</a> block Google’s (and many other companies’) trackers across the
+                    Internet, helping to keep your
+                    browsing history more private, as it should be. And that’s just the beginning — by using DuckDuckGo
+                    you also escape the
+                    manipulation of the filter bubble and can use the Internet faster (after all that tracking code is
+                    disabled). <a target="_blank" class="ans_link"
+                        href="https://spreadprivacy.com/why-use-duckduckgo-instead-of-google/" target="_blank">Learn
+                        more</a>.</p>
+            </div>
+        </div>
+        <hr />
+        <div class="que_ans">
+            <div class="ico">
+                <button class="drop_btn" id="down4" style="display: block;" onclick="que4Open()">
+                    <i class="fas fa-chevron-down down styled"></i>
+                </button>
+                <button class="drop_btn" id="up4" style="display: none;" onclick="que4Open()">
+                    <i class="fas fa-chevron-up up styled"></i>
+                </button>
+
+
+            </div>
+            <div class="qa">
+                <p class="que">How do DuckDuckGo search results compare to Google’s?</p>
+                <p class="ans" id="openans4" style="display:none;">DuckDuckGo search gives you truly private search
+                    results without tradeoffs in result quality. We have everything you’ve
+                    come to expect in an online search experience, and a few <a target="_blank"
+                        href="https://duckduckgo.com/bang" target="_blank" class="ans_link">bonus features</a> that make
+                    searching the Internet not only
+                    private, but also a fat more fun! And, on top of that, because there is no search history on
+                    DuckDuckGo, you escape the
+                    filter bubble of manipulated results. <a target="_blank"
+                        href="https://spreadprivacy.com/is-duckduckgo-a-good-search-engine/" target="_blank"
+                        class="ans_link">Learn more</a>.</p>
+            </div>
+        </div>
+        <hr />
+        <div class="que_ans">
+            <div class="ico">
+                <button class="drop_btn" id="down5" style="display: block;" onclick=" que5Open()">
+                    <i class="fas fa-chevron-down down styled"></i>
+                </button>
+                <button class="drop_btn" id="up5" style="display: none;" onclick="que5Open()">
+                    <i class="fas fa-chevron-up up styled"></i>
+                </button>
+
+
+            </div>
+            <div class="qa">
+                <p class="que">What’s the difference between using DuckDuckGo and Incognito mode?</p>
+                <p class="ans" id="openans5" style="display:none;">It is a myth that you can’t be tracked while using
+                    so-called “Incognito” mode. In fact, Incognito mode mainly just
+                    deletes information on your computer and does nothing to stop Google from saving your searches, nor
+                    does it stop
+                    companies, Internet service providers, or governments from being able to track you across the
+                    Internet. By contrast,
+                    DuckDuckGo search is completely anonymous and if you add our app & extension on top, we help keep
+                    you private when
+                    browsing off of search results. <a target="_blank"
+                        href="https://spreadprivacy.com/how-anonymous-is-duckduckgo/" class="ans_link">Learn more</a>.
+                </p>
+            </div>
+        </div>
+        <hr />
+        <div class="que_ans">
+            <div class="ico">
+                <button class="drop_btn" id="down6" style="display: block;" onclick=" que6Open()">
+                    <i class="fas fa-chevron-down down styled"></i>
+                </button>
+                <button class="drop_btn" id="up6" style="display: none;" onclick=" que6Open()">
+                    <i class="fas fa-chevron-up up styled"></i>
+                </button>
+
+
+            </div>
+            <div class="qa">
+                <p class="que">How popular is DuckDuckGo?</p>
+                <p class="ans" id="openans6" style="display:none;">We don’t track our users, so it’s actually impossible
+                    for us to know how many users in total are using our products.
+                    However, we are able to make an estimate based on the number of searches we get per month, <a
+                        target="_blank" href="https://duckduckgo.com/traffic" class="ans_link">which we make public</a>.
+                    Our
+                    best guess — over 50 million people! <a target="_blank"
+                        href="https://spreadprivacy.com/how-many-people-use-duckduckgo/" class="ans_link">Learn
+                        more</a>.</p>
+            </div>
+        </div>
+        <hr />
+        <div class="que_ans">
+            <div class="ico">
+                <button class="drop_btn" id="down7" style="display: block;" onclick="que7Open()">
+                    <i class="fas fa-chevron-down down styled"></i>
+                </button>
+                <button class="drop_btn" id="up7" style="display: none;" onclick=" que7Open()">
+                    <i class="fas fa-chevron-up up styled"></i>
+                </button>
+
+
+            </div>
+            <div class="qa">
+                <p class="que">How does the DuckDuckGo app & extension work?</p>
+                <p class="ans" id="openans7" style="display:none;">The DuckDuckGo Privacy Browser mobile app and Privacy
+                    Essentials desktop extension both come with our best-in-class
+                    tracker blocker, encryption enforcer, and private search engine – all in one simple package. This
+                    gives you all the key
+                    privacy protection tools to search and browse privately, curbing the constant monitoring of your
+                    Internet activity by
+                    companies like Google and Facebook. <a target="_blank"
+                        href="https://spreadprivacy.com/how-does-the-duckduckgo-app-extension-protect-my-privacy/ "
+                        class="ans_link">Learn more</a>.</p>
+            </div>
+        </div>
+        <hr />
+        <a target="_blank"
+            href="https://chrome.google.com/webstore/detail/duckduckgo-privacy-essent/bkdgflcldnnnapblkhphbgpggdiikppg"><button
+                class="blue_btn foot_btn">Add DuckDuckGo to Chrome</button></a>
+
+
+
+
+
+    </footer>
+
+
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>
